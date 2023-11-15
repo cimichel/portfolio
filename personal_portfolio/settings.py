@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'django.contrib.admin',
     "projects.apps.ProjectsConfig",
+    "memetrivia.apps.MemetriviaConfig",
     "pages.apps.PagesConfig",
     'django.contrib.auth',
     'django.contrib.contenttypes',

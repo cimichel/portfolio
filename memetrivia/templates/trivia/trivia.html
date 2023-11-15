@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+<h1>{{ trivia_question.title }}</h1>
+<div class="row">
+{% for trivia_question in trivia_questions %}
+    <div class="col-md-4">
+        <div class="card mb-2">
+            <div class="card-body">
+                <h5 class="card-title">{{ trivia_question.title }}</h5>
+                <p class="card-text">{{ trivia_question.options }}</p>
+                {% if trivia_question.image %}
+                <img class="card-img-top" src="{{ trivia_question.image.url }}">
+            {% endif %}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
