@@ -20,13 +20,9 @@ Body styles
 */
 body {
     font-family: "MS Sans Serif",Tahoma,Verdana,Segoe,sans-serif; 
-    background: teal;
+    background: white;
     color: white;
     padding-bottom: 28px;
-}
-.bg-cloud{
-    background-image: url(clouds2.jpg);
-    color:#212529;
 }
 
 /*
@@ -35,7 +31,7 @@ Link color
 
 */
 a {
-    color:#2d49eb;
+    color:#FF39B8;
 }
 
 /*
@@ -85,7 +81,7 @@ Scrollbar (only chrome & safari)
 }
 ::-webkit-scrollbar-button:vertical:increment {
     width: 18px;
-    background: silver url(combo.png) no-repeat 50%;
+    background: linear-gradient(#FF2FD1, #FFAEED);
     height: 18px;
     margin: 1px 1px 1px 10px;
     -webkit-transform: rotateX(-90deg);
@@ -160,11 +156,11 @@ Scrollbar (only chrome & safari)
 .btn{
     border-width: 2px;
     border-style: outset;
-    border-color: buttonface;
-    border-right-color: #424242;
-    border-bottom-color: #424242;
-    background: silver;
-    color: black;
+    border-color: #9B45CF;
+    border-right-color: #9B45CF;
+    border-bottom-color: #9B45CF;
+    background: #FFDFF8;
+    color: #9B45CF;
     padding: 0 0 4px;
     border-radius: 1px;
 }
@@ -216,12 +212,12 @@ CARDS
 .card{
     border: solid;
     border-width: 2px;
-    border-bottom-color: #424242;
-    border-right-color: #424242;
+    border-bottom-color: #FF00A4;
+    border-right-color: #FF00A4;
     border-left-color: #fff;
     border-top-color: #fff;
-    background: silver;
-    color:#212529;
+    background:#FFDFF8;
+    color:#9B45CF;
 }
 .card.square{
     border-radius: 0px;
@@ -230,11 +226,11 @@ CARDS
     border-radius: 0px;
 }
 .card.w95 .card-header{
-    background: #08216b;
+    background: #FFDFF8;
     /* OR #000082 is better?*/
 }
 .card-header{
-    background: -webkit-linear-gradient(left,#08216b,#a5cef7);
+    background: -webkit-linear-gradient(left,#FF2FD1,#FFAEED);
     color: #fff;
     display: block;
     white-space: nowrap;
@@ -274,10 +270,10 @@ LIST GROUPS
 }
 .list-group-item-primary{
     color: white;
-    background: -webkit-linear-gradient(left,#08216b,#a5cef7);
+    background: -webkit-linear-gradient(left,#FF39B8,#FF96E8);
 }
 .list-group-item-action:hover {
-    color: #08216b;
+    color: #FFEDFB;
 }
 
 /*
@@ -287,23 +283,23 @@ NAVBAR
 */
 .navbar-95{
     
-    background: silver;
+    background: #FFDFF8;
     margin: 0;
-    border: 1px outset #fff;
+    border-bottom: 1px outset #FF39B8;
     min-height: 40px;
     padding: 0 6px;
-    color:#212529;
+    color:#9B45CF;
 }
 
 .navbar-brand{
-    color:#212529;
+    color:#9B45CF;
     padding: 0 6px;
 }
 .nav-link{
     text-decoration: none;
     display: inline-block;
     padding: 0 9px;
-    color:#212529;
+    color:#9B45CF;
 }
 .dropdown-menu{
     display: none;
@@ -312,17 +308,17 @@ NAVBAR
     margin-left: 12px;
     font-size: 12px;
     list-style-type: none;
-    background: silver;
+    background: #FFDFF8;
     border: 1.8px outset #fff;
     border-radius: 0;
-    -webkit-box-shadow: 1.5px 1.5px #000;
-    box-shadow: 1.5px 1.5px #000;
+    -webkit-box-shadow: 1.5px 1.5px #9B45CF;
+    box-shadow: 1.5px 1.5px #9B45CF;
 }
 .dropdown-item{
     padding: 1px 0 1px 2px;
 }
 .dropdown-item:hover{
-    color:#08216b;
+    color:#9B45CF;
 }
 .navbar-light .navbar-toggler.collapsed .navbar-toggler-icon {
     width: 32px;
@@ -342,7 +338,7 @@ FOOTER
 */
 .taskbar{
     cursor: default;
-    background-color: silver;
+    background-color: #FFDFF8;
     margin: 16px 0 0 0;
     padding: 0 8px;
     position: static;
@@ -386,6 +382,12 @@ ICONS
 .icon-16-4{
     margin-bottom:4px;
     max-height: 16px;
+}
+.icon-dev{
+    width: 100px;
+    height:100px;
+    margin:4px;
+    max-height: 66px;
 }
 /*
 
@@ -506,7 +508,7 @@ TABS
 
 */
 .tab-content {
-    background: silver;
+    background: linear-gradient(#FF2FD1, #FFAEED);
     border: solid;
     border-width: 2px;
     border-bottom-color: #424242;
@@ -521,7 +523,7 @@ TABS
 .nav-tabs .nav-item {
     position: relative;
     margin-bottom: 0;
-    background: #c0c0c0;
+    background: linear-gradient(#FF2FD1, #FFAEED);
     color: black;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
